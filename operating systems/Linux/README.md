@@ -1,7 +1,7 @@
 # linux
 linux-related notes
 
-## 新增 ubuntu 螢幕解析度設定中未出現的項目
+## 新增 Ubuntu 螢幕解析度設定中未出現的項目
 ```bash
 cvt 1920 1080 60
 ```
@@ -24,3 +24,8 @@ xrandr --addmode Virtual1 1920x1080_60.00
 ```
 
 *How to set a custom resolution? https://askubuntu.com/questions/377937*
+
+## 在 Ubuntu 中 VMware 共用資料夾掛載路徑
+```
+/mnt/hgfs/
+```
