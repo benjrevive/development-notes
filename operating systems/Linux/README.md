@@ -1,7 +1,7 @@
 # linux
 linux-related notes
 
-* 新增 ubuntu 螢幕解析度設定中未出現的項目
+## 新增 ubuntu 螢幕解析度設定中未出現的項目
 ```bash
 cvt 1920 1080 60
 ```
