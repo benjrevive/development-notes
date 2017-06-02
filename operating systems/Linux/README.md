@@ -1,6 +1,18 @@
 # linux
 linux-related notes
 
+## 列出所有網卡硬體資訊  
+```bash
+lspci | grep -i eth  
+```
+## 列出所有網卡名稱
+```bash
+ip link
+```  
+## 顯示所有網卡流量
+```bash
+ifconfig -s -a
+```  
 ## 新增 Ubuntu 螢幕解析度設定中未出現的項目
 ```bash
 cvt 1920 1080 60
