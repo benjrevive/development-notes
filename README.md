@@ -43,3 +43,20 @@ xrandr --addmode Virtual1 1920x1080_60.00
 ```
 ## 啟用終端機顯示顏色
 將 ~/.bashrc 檔案中將 #force_color_prompt=yes 註解符號 # 刪除後，重新進入終端機
+
+## shell script 參數與判斷式
+```bash
+echo "\$# = " $#
+if [ $# -gt 0 ]; then
+    if [ $1 = "1GB" -o $1 = "10GB" ]; then
+        echo "GB"
+        touch test_$1.txt
+    elif [ $1 = "100GB" ]; then
+        echo "100GB"
+    else
+        echo "\$1 = " $1
+    fi
+else
+    echo "no args"
+fi
+```
