@@ -41,3 +41,5 @@ xrandr --addmode Virtual1 1920x1080_60.00
 ```
 /mnt/hgfs/
 ```
+## 啟用終端機顯示顏色
+將 ~/.bashrc 檔案中將 #force_color_prompt=yes 註解符號 # 刪除後，重新進入終端機
