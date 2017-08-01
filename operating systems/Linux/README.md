@@ -28,6 +28,11 @@ Modeline "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hs
 xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
 xrandr --addmode Virtual1 1920x1080_60.00
 ```
+使用指令設定螢幕解析度
+(參數 Virtual1 適用於虛擬機，實體機換成 VGA-0)
+```bash
+xrandr --output Virtual1 --mode "1920x1080_60.00"
+```
 新增 ~/.xprofile 並將上述指令如下填入，往後每次開機後就不用重新再設定一次
 ```bash
 #!/bin/sh
