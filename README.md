@@ -49,6 +49,18 @@ xrandr --addmode Virtual1 1920x1080_60.00
 ## 啟用終端機顯示顏色
 將 ~/.bashrc 檔案中將 #force_color_prompt=yes 註解符號 # 刪除後，重新進入終端機
 
+## 在 Ubuntu 中停用 IPv6 功能
+編輯 /etc/sysctl.conf，在檔案最後加上以下內容後，
+```
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+```
+執行以下指令即可 
+```bash
+sudo sysctl -p
+```
+
 ## shell script 參數與判斷式
 ```bash
 echo "\$# = " $#
