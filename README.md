@@ -60,6 +60,8 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 ```bash
 sudo sysctl -p
 ```
+## 快速安裝 L2TP/IPSec VPN
+*L2TP/IPSec一键安装脚本 | 秋水逸冰 https://teddysun.com/448.html*
 
 ## shell script 參數與判斷式
 ```bash
