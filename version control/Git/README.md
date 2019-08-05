@@ -13,11 +13,12 @@
 |`git reset <commit> [--mixed|--soft|--hard]`|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
 |git merge|...|
 |git rebase ...|...|
-|git ...|about pull request(PR)|
 |git push|...|
-|git pull|...|
+|git pull|= fetch + merge ...|
 |git fetch|...|
 |git stash|...|
+|`git config [--global] user.email <email>`|set user email|
+|`git config [--global] user.name <username>`|set user name|
 
 ## References
 * *Learn Git Branching https://learngitbranching.js.org* (圖形化 Git 學習資源)
