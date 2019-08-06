@@ -1,4 +1,4 @@
-# linux
+# linux-notes
 linux-related notes
 
 ## 列出所有網卡硬體資訊  
