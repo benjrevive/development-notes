@@ -60,6 +60,76 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 ```bash
 sudo sysctl -p
 ```
+
+## 新增使用者帳戶:
+```bash
+sudo adduser <username>
+```
+
+## 將帳戶加入至 sudo 群組: 
+```bash
+sudo usermod -aG sudo <username>
+```
+
+## 顯示所有使用者帳戶資料: 
+```bash
+cat /etc/passwd
+```
+
+## 顯示所有使用者帳號: 
+```bash
+awk -F':' '{ print $1}' /etc/passwd
+```
+
+## 顯示所有群組: 
+```bash
+cat /etc/group
+```
+
+## 顯示使用者群組: 
+```bash
+groups [username]
+```
+
+## 刪除使用者帳戶: 
+```bash
+sudo deluser <username> --remove-home --backup
+```
+
+## 以名稱搜尋資料夾: 
+```bash
+find <path> -name <dirname> -type d
+```
+
+## 以名稱搜尋資料夾(不分大小寫): 
+```bash
+find <path> -iname <dirname> -type d
+```
+
+## 顯示壓縮檔內容: 
+```bash
+tar -tvf <file>
+```
+
+## 壓縮: 
+```bash
+tar -zcvpf <output-filename> <source>
+```
+
+## 顯示已安裝套件: 
+```bash
+apt list [packagename] --installed
+```
+
+## 在背景執行指令(使用者中斷連線後仍繼續執行): 
+```bash
+nohup <command> &
+```
+
+## diff unified format
+## show all sudoers
+
+
 ## 快速安裝 L2TP/IPSec VPN
 *L2TP/IPSec一键安装脚本 | 秋水逸冰 https://teddysun.com/448.html*
 
