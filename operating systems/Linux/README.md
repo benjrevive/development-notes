@@ -126,6 +126,15 @@ apt list [packagename] --installed
 nohup <command> &
 ```
 
+## Vim 唯讀模式
+```bash
+vim -R <file>
+```
+或
+```bash
+view <file>
+```
+
 ## diff unified format
 ## show all sudoers
 
