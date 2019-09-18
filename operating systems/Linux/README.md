@@ -116,6 +116,11 @@ tar -tvf <file>
 tar -zcvpf <output-filename> <source>
 ```
 
+## 解壓縮: 
+```bash
+tar [-C <output-path>] -zxvf <file>
+```
+
 ## 顯示已安裝套件: 
 ```bash
 apt list [<packagename>] --installed
