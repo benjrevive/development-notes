@@ -6,6 +6,11 @@ Atomic commits (https://hearrain.com/git-zui-jia-shi-jian-:-yuan-zi-xing-ti-jiao
 
 Git best practices
 
+## Terms
+
+* staged: ready to be commited
+* hunk: the changed section
+
 ## Commands
 |command|description|
 |-|-|
