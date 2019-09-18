@@ -2,6 +2,10 @@
 
 > “Branch early, branch often”
 
+Atomic commits (https://hearrain.com/git-zui-jia-shi-jian-:-yuan-zi-xing-ti-jiao-atomic-commits)
+
+Git best practices
+
 ## Commands
 |command|description|
 |-|-|
