@@ -118,7 +118,7 @@ tar -zcvpf <output-filename> <source>
 
 ## 顯示已安裝套件: 
 ```bash
-apt list [packagename] --installed
+apt list [<packagename>] --installed
 ```
 
 ## 在背景執行指令(使用者中斷連線後仍繼續執行): 
