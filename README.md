@@ -142,7 +142,10 @@ view <file>
 
 ## diff unified format
 ## show all sudoers
-
+## resize LVM
+https://www.linuxidc.com/Linux/2017-05/143724.htm
+https://sc8log.blogspot.com/2017/03/linux-lvm-lvm.html
+https://blog.moa.tw/2018/12/ubuntu-1804-root-lvm-volume.html
 
 ## 快速安裝 L2TP/IPSec VPN
 *L2TP/IPSec一键安装脚本 | 秋水逸冰 https://teddysun.com/448.html*
