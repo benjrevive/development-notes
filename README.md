@@ -18,10 +18,10 @@ Git best practices
 |`git init`|initialize a git repo|
 |`git checkout -b <branch-name>`|create the branch if it doesn't exists, and jump to the branch|
 |`git add [file(s)]`|stage the file(s)|
-|`git add -i|--interactive`|interactive mode|
+|<code>git add -i&#124;--interactive</code>|interactive mode|
 |`git add -p [file]`|partial staging|
 |`git reset [file]`|unstage the file(s)|
-|`git reset <commit> [--mixed|--soft|--hard]`|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
+|<code>git reset \<commit> [--mixed&#124;--soft&#124;--hard]</code>|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
 |git merge|...|
 |git rebase ...|...|
 |git push|...|
