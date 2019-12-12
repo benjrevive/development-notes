@@ -13,7 +13,7 @@ Git best practices
 
 ## Commands
 |command|description|
-|-|-|
+|---|---|
 |`git clone <repo-resource>`|clone a repo|
 |`git init`|initialize a git repo|
 |`git checkout -b <branch-name>`|create the branch if it doesn't exists, and jump to the branch|
