@@ -20,6 +20,8 @@ Git best practices
 |`git add [file(s)]`|stage the file(s)|
 |<code>git add -i&#124;--interactive</code>|interactive mode|
 |`git add -p [file]`|partial staging|
+|`git commit [-m "<message>"]`|commit the added files [with the message]|
+|`git commit -am "<message>"`|add all tracked files and commit with message|
 |`git reset [file]`|unstage the file(s)|
 |<code>git reset \<commit> [--mixed&#124;--soft&#124;--hard]</code>|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
 |`git merge [-m <msg>] <commit>`|merge the specific branch into current one (w/ commit message(in case one is created))|
