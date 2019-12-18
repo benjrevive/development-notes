@@ -8,7 +8,7 @@ Git best practices
 
 ## Terms
 
-* staged: ready to be commited
+* staged: ready to be committed
 * hunk: the changed section
 
 ## Commands
