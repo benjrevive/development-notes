@@ -39,6 +39,10 @@ Git best practices
 |`git remote set-url <remote-name> <new-url>`|set the remote url|
 |<code>git config [--local&#124;--global&#124;--system] user.name&#124;user.email <email></code>|set [local/global/system] user name/email|
 
+## Settings 
+* local ignore rule: `.git/info/exclude`
+* git global configurations like user, editor, tools, etc.: `~/.gitconfig`
+
 ## References
 * *Learn Git Branching https://learngitbranching.js.org* (圖形化 Git 學習資源)
 * *Git - Reference https://git-scm.com/docs*
