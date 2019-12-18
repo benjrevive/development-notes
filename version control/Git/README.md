@@ -17,6 +17,8 @@ Git best practices
 |`git clone <repo-resource>`|clone a repo|
 |`git init`|initialize a git repo|
 |`git checkout -b <branch-name>`|create the branch if it doesn't exists, and jump to the branch|
+|`git checkout <file>`|discard the file change|
+|`git checkout <branch> -- <file>`|checkout the file in the specific branch|
 |`git add [file(s)]`|stage the file(s)|
 |<code>git add -i&#124;--interactive</code>|interactive mode|
 |`git add -p [file]`|partial staging|
@@ -30,6 +32,11 @@ Git best practices
 |git pull|= fetch + merge ...|
 |git fetch|...|
 |git stash|...|
+|`git difftool [--cached] [<file-in-another-branch>] [<local-file>]`|show file differences using external tool|
+|`git branch -d <branch>`|delete the branch|
+|`git log [-<number>] [--oneline]`|show [number] commit logs [in the form of one line per log]|
+|`git remote -v`|show the remote names and urls|
+|`git remote set-url <remote-name> <new-url>`|set the remote url|
 |<code>git config [--local&#124;--global&#124;--system] user.name&#124;user.email <email></code>|set [local/global/system] user name/email|
 
 ## References
