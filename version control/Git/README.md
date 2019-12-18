@@ -36,3 +36,4 @@ Git best practices
 ## References
 * *Learn Git Branching https://learngitbranching.js.org* (圖形化 Git 學習資源)
 * *Git - Reference https://git-scm.com/docs*
+* *Git - Interactive Staging https://git-scm.com/book/zh-tw/v2/Git-Tools-Interactive-Staging*
