@@ -30,8 +30,7 @@ Git best practices
 |git pull|= fetch + merge ...|
 |git fetch|...|
 |git stash|...|
-|`git config [--global] user.email <email>`|set user email|
-|`git config [--global] user.name <username>`|set user name|
+|<code>git config [--local&#124;--global&#124;--system] user.name&#124;user.email <email></code>|set [local/global/system] user name/email|
 
 ## References
 * *Learn Git Branching https://learngitbranching.js.org* (圖形化 Git 學習資源)
