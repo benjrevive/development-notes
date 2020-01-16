@@ -36,6 +36,7 @@ Git best practices
 |`git diff <branch-A> <branch-B> -- <file>`|show the file differences with the one in another branch|
 |`git diff <branch-A>:<file-A> <branch-B>:<file-B>`|show the file differences with another file in another branch|
 |`git difftool ...`|`git diff` using external tool|
+|`git branch <branch>`|create a new branch|
 |`git branch -d <branch>`|delete the branch|
 |`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
 |`git remote -v`|show the remote names and urls|
