@@ -37,7 +37,7 @@ Git best practices
 |`git diff <branch-A>:<file-A> <branch-B>:<file-B>`|show the file differences with another file in another branch|
 |`git difftool ...`|`git diff` using external tool|
 |`git branch -d <branch>`|delete the branch|
-|`git log [-<number>] [--oneline]`|show [number] commit logs [in the form of one line per log]|
+|`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
 |`git remote -v`|show the remote names and urls|
 |`git remote set-url <remote-name> <new-url>`|set the remote url|
 |<code>git config [--local&#124;--global&#124;--system] user.name&#124;user.email <email></code>|set [local/global/system] user name/email|
