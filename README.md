@@ -28,6 +28,7 @@ Git best practices
 |<code>git reset \<commit> [--mixed&#124;--soft&#124;--hard]</code>|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
 |`git merge [-m <msg>] <commit>`|merge the specific branch into current one (w/ commit message(in case one is created))|
 |`git rm [--cached] [file1] [file2] ...`|remove tracked file(s) [and keep them in workspace]|
+|`git ls-files`|show information about files in the index and the working tree|
 |git rebase ...|...|
 |git push|...|
 |git pull|= fetch + merge ...|
@@ -36,8 +37,10 @@ Git best practices
 |`git diff [--cached] [<file>]`|show the [specific] file differences [with the staged one]|
 |`git diff <branch-A> <branch-B> -- <file>`|show the file differences with the one in another branch|
 |`git diff <branch-A>:<file-A> <branch-B>:<file-B>`|show the file differences with another file in another branch|
+|`git diff --name-status [<branch-A>] <branch-B>`|show only names and status of changed files between the branches|
 |`git difftool ...`|`git diff` using external tool|
 |`git branch <branch>`|create a new branch|
+|`git branch -m [<old-branch>] <new-branch>`|rename the branch|
 |`git branch -d <branch>`|delete the branch|
 |`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
 |`git remote -v`|show the remote names and urls|
