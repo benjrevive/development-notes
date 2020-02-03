@@ -51,6 +51,9 @@ Git best practices
 * local ignore rule: `.git/info/exclude`
 * git global configurations like user, editor, tools, etc.: `~/.gitconfig`
 
+## Notes
+* `@{-N}` syntax refer to the N-th last branch/commit checked out using "git checkout/switch" operation. `-` is synonymous to `@{-1}`.
+
 ## References
 * *Learn Git Branching https://learngitbranching.js.org* (圖形化 Git 學習資源)
 * *Git - Reference https://git-scm.com/docs*
