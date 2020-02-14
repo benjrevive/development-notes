@@ -20,7 +20,7 @@ Git best practices
 |`git checkout <file>`|discard the file change|
 |`git checkout <branch> -- <file>`|checkout the file in the specific branch|
 |`git add [file(s)]`|stage the file(s)|
-|<code>git add -i&#124;--interactive</code>|interactive mode|
+|<code>git add -i&#124;--interactive</code>|stage the file(s) interactively|
 |`git add -p [file]`|partial staging|
 |`git commit [-m "<message>"]`|commit the added files [with the message]|
 |`git commit -am "<message>"`|add all tracked files and commit with message|
