@@ -26,6 +26,9 @@ Git best practices
 |`git commit -am "<message>"`|add all tracked files and commit with message|
 |`git reset [file]`|unstage the file(s)|
 |<code>git reset \<commit> [--mixed&#124;--soft&#124;--hard]</code>|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
+|`git clean -n [file]`|show the files which will be removed from the working tree|
+|`git clean -f [file]`|removed the untracked file(s) from the working tree|
+|`git clean -i [file]`|removed the untracked file(s) from the working tree interactively|
 |`git merge [-m <msg>] <commit>`|merge the specific branch into current one (w/ commit message(in case one is created))|
 |`git rm [--cached] [file1] [file2] ...`|remove tracked file(s) [and keep them in workspace]|
 |`git ls-files`|show information about files in the index and the working tree|
