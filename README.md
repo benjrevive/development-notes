@@ -45,6 +45,7 @@ Git best practices
 |`git branch <branch>`|create a new branch|
 |`git branch -m [<old-branch>] <new-branch>`|rename the branch|
 |`git branch -d <branch>`|delete the branch|
+|`git push <remote> --delete <branch>`|delete the remote branch|
 |`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
 |`git remote -v`|show the remote names and urls|
 |`git remote set-url <remote-name> <new-url>`|set the remote url|
