@@ -38,6 +38,7 @@ Git best practices
 |git fetch|...|
 |git stash|...|
 |`git diff [--cached] [<file>]`|show the [specific] file differences [with the staged one]|
+|`git diff -- <file-A> <file-B>`|show the differences between the files|
 |`git diff <branch-A> <branch-B> -- <file>`|show the file differences with the one in another branch|
 |`git diff <branch-A>:<file-A> <branch-B>:<file-B>`|show the file differences with another file in another branch|
 |`git diff --name-status [<branch-A>] <branch-B>`|show only names and status of changed files between the branches|
