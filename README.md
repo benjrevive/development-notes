@@ -10,6 +10,21 @@ source ~/.bashrc
 ```
 或重新登入終端機
 
+### 清空畫面
+```bash
+clear
+```
+或 <kbd>Ctrl</kbd>+<kbd>L</kbd>
+
+### 清空輸入區
+<kbd>Ctrl</kbd>+<kbd>U</kbd> (復原: <kbd>Ctrl</kbd>+<kbd>Y</kbd>)
+
+### 清除輸入區最後一個單詞
+<kbd>Ctrl</kbd>+<kbd>W</kbd> (復原: <kbd>Ctrl</kbd>+<kbd>Y</kbd>)
+
+### 將輸入區內容註解
+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>#</kbd>
+
 ## 網路相關
 
 ### 列出所有網卡硬體資訊  
