@@ -1,6 +1,13 @@
 # linux-notes
 linux-related notes
 
+### 啟用終端機顯示顏色
+將 `~/.bashrc` 檔案中 `#force_color_prompt=yes` 註解符號 `#` 刪除，執行：
+```bash
+source ~/.bashrc
+```
+或重新登入終端機
+
 ### 列出所有網卡硬體資訊  
 ```bash
 lspci | grep -i eth  
@@ -14,6 +21,18 @@ ip link
 ### 顯示所有網卡流量
 ```bash
 ifconfig -s -a
+```
+
+### 在 Ubuntu 中停用 IPv6 功能
+編輯 /etc/sysctl.conf，在檔案最後加上以下內容後，
+```
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+```
+執行：
+```bash
+sudo sysctl -p
 ```
 
 ### 新增 Ubuntu 螢幕解析度設定中未出現的項目
@@ -48,20 +67,6 @@ xrandr --addmode Virtual1 1920x1080_60.00
 ## 在 Ubuntu 中 VMware 共用資料夾掛載路徑
 ```
 /mnt/hgfs/
-```
-## 啟用終端機顯示顏色
-將 ~/.bashrc 檔案中將 #force_color_prompt=yes 註解符號 # 刪除後，重新進入終端機
-
-## 在 Ubuntu 中停用 IPv6 功能
-編輯 /etc/sysctl.conf，在檔案最後加上以下內容後，
-```
-net.ipv6.conf.all.disable_ipv6 = 1
-net.ipv6.conf.default.disable_ipv6 = 1
-net.ipv6.conf.lo.disable_ipv6 = 1
-```
-執行以下指令即可 
-```bash
-sudo sysctl -p
 ```
 
 ## 新增使用者帳戶:
