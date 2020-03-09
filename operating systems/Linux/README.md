@@ -1,12 +1,16 @@
 # linux-notes
 linux-related notes
 
+## bash 相關
+
 ### 啟用終端機顯示顏色
 將 `~/.bashrc` 檔案中 `#force_color_prompt=yes` 註解符號 `#` 刪除，執行：
 ```bash
 source ~/.bashrc
 ```
 或重新登入終端機
+
+## 網路相關
 
 ### 列出所有網卡硬體資訊  
 ```bash
@@ -34,6 +38,8 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 ```bash
 sudo sysctl -p
 ```
+
+## 畫面相關
 
 ### 新增 Ubuntu 螢幕解析度設定中未出現的項目
 ```bash
