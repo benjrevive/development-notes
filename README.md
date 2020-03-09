@@ -197,6 +197,3 @@ fi
 ```
 
 ## apt/apt-get autoremove 的危險性
-
-## Git
-*Learn Git Branching https://learngitbranching.js.org*
