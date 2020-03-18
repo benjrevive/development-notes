@@ -1,6 +1,13 @@
 # windows-notes
 
-## 避免 Win10 更新後自動重新開機
+## Batch
+### 暫停特定秒數
+```batch
+timeout /t 5
+```
+
+## Others
+### 避免 Win10 更新後自動重新開機
 
 目標路徑: `C:\Windows\System32\Tasks\Microsoft\Windows\UpdateOrchestrator\`
 
