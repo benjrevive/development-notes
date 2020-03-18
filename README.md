@@ -6,6 +6,23 @@
 timeout /t 5
 ```
 
+### 傳入引數
+其中一種做法：
+```batch
+:loop
+IF NOT "%1"=="" (
+    IF "%1"=="-arg1" (
+        SET var1=%2
+        SHIFT
+    ) ELSE IF "%1"=="-arg2" (
+        SET var2=%2
+        SHIFT
+    )
+    SHIFT
+    GOTO:loop
+)
+```
+
 ## Others
 ### 避免 Win10 更新後自動重新開機
 
