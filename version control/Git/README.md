@@ -18,7 +18,7 @@ Git best practices
 |`git init`|initialize a git repo|
 |`git status --ignored`|show the ignored files|
 |`git checkout -b <branch-name>`|create the branch if it doesn't exists, and jump to the branch|
-|`git checkout <file>`|discard the file change|
+|`git checkout [-p] <file>`|discard [some parts of] the file change|
 |`git checkout <branch> -- <file>`|checkout the file in the specific branch|
 |`git add [file(s)]`|stage the file(s)|
 |<code>git add -i&#124;--interactive</code>|stage the file(s) interactively|
