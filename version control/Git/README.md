@@ -22,8 +22,8 @@ Git best practices
 |`git checkout <branch> -- <file>...`|checkout the file(s) in the specific branch|
 |`git add [-i] <file>...`|stage the file(s) [interactively]|
 |`git add -p [<file>...]`|partial staging|
-|`git commit [-m "<message>"]`|commit the added files [with the message]|
-|`git commit -am "<message>"`|add all tracked files and commit with message|
+|`git commit [-m <message>]`|commit the added files [with the message]|
+|`git commit -am <message>`|add all tracked files and commit with message|
 |`git reset [<file>...]`|unstage the file(s)|
 |<code>git reset \<commit> [--mixed&#124;--soft&#124;--hard]</code>|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
 |`git clean -n [-d] [-i] [<file-or-path>...]`|show the untracked file(s) [and directories] which will be removed from the working tree [interactively]|
