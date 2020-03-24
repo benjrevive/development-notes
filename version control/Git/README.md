@@ -14,7 +14,7 @@ Git best practices
 ## Commands
 |command|description|
 |---|---|
-|`git clone <repo-resource>`|clone a repo|
+|`git clone [-b <branch>] <repo-resource>`|clone a repo [pointed to the specified branch]|
 |`git init`|initialize a git repo|
 |`git status --ignored`|show the working tree status include the ignored files|
 |`git checkout -b <branch-name>`|create the branch if it doesn't exists, and jump to the branch|
