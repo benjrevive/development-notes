@@ -35,7 +35,11 @@ Git best practices
 |git push|...|
 |git pull|= fetch + merge ...|
 |git fetch|...|
-|git stash|...|
+|`git stash`|stash all changed files except the untracked ones|
+|`git stash push [<file>...] [-m <message>]`|stash files [with custom message]|
+|`git stash push -k [<file>...]`|keep the staged files and stash all(include staged)[/specific] changed ones|
+|`git stash apply [--index]`|apply the stash entry to the current working tree [with keeping the stashed stage state]|
+|`git stash pop ...`|like apply, but remove the entry from stash list|
 |`git diff [--cached] [<file>...]`|show the file differences [with the staged one]|
 |`git diff -- <file-A> <file-B>`|show the differences between the files|
 |`git diff <branch-A> <branch-B> -- <file>`|show the file differences with the one in another branch|
