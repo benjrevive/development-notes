@@ -33,7 +33,6 @@ Git best practices
 |`git merge [-m <msg>] <commit>`|merge the specific branch into current one (w/ commit message(in case one is created))|
 |`git rm [--cached] [file1] [file2] ...`|remove tracked file(s) [and keep them in workspace]|
 |`git ls-files`|show information about files in the index and the working tree|
-|git rebase ...|...|
 |git push|...|
 |git pull|= fetch + merge ...|
 |git fetch|...|
@@ -49,6 +48,7 @@ Git best practices
 |`git branch -d <branch>`|delete the branch|
 |`git push <remote> --delete <branch>`|delete the remote branch|
 |`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
+|`git rebase -i <commit>`|rebase the commits after the specified one|
 |`git remote -v`|show the remote names and urls|
 |`git remote set-url <remote-name> <new-url>`|set the remote url|
 |<code>git config [--local&#124;--global&#124;--system] user.name&#124;user.email <email></code>|set [local/global/system] user name/email|
