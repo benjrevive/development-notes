@@ -25,7 +25,7 @@ Git best practices
 |`git commit [-m <message>]`|commit the added files [with the message]|
 |`git commit -am <message>`|add all tracked files and commit with message|
 |`git reset [<file>...]`|unstage the file(s)|
-|<code>git reset \<commit> [--mixed&#124;--soft&#124;--hard]</code>|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
+|<code>git reset \<commit> [--soft&#124;--mixed&#124;--hard]</code>|reset to the specific commit, cancel the commits in the path and restore the files into index/workspace/recycle bin (`--mixed` is the default mode if not specified)|
 |`git clean -n [-d] [-i] [<file-or-path>...]`|show the untracked file(s) [and directories] which will be removed from the working tree [interactively]|
 |`git clean -n -x | -X [<file-or-path>...]`|show the untracked and ignored/only the ignored file(s) which will be removed from the working tree|
 |`git clean -f [...]`|execute `git clean` actually|
