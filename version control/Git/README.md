@@ -18,26 +18,26 @@ Git best practices
 |`git init`|initialize a git repo|
 |`git status --ignored`|show the working tree status include the ignored files|
 |`git checkout -b <branch-name>`|create the branch if it doesn't exists, and jump to the branch|
-|`git checkout [-p] <file>`|discard [some parts of] the file change|
-|`git checkout <branch> -- <file>`|checkout the file in the specific branch|
-|`git add [file(s)]`|stage the file(s)|
+|`git checkout [-p] <file>...`|discard [some parts of] the file changes|
+|`git checkout <branch> -- <file>...`|checkout the file(s) in the specific branch|
+|`git add <file>...`|stage the file(s)|
 |<code>git add -i&#124;--interactive</code>|stage the file(s) interactively|
-|`git add -p [file]`|partial staging|
+|`git add -p [<file>...]`|partial staging|
 |`git commit [-m "<message>"]`|commit the added files [with the message]|
 |`git commit -am "<message>"`|add all tracked files and commit with message|
-|`git reset [file]`|unstage the file(s)|
+|`git reset [<file>...]`|unstage the file(s)|
 |<code>git reset \<commit> [--mixed&#124;--soft&#124;--hard]</code>|reset to the specific commit (回到指定的 commit 並取消路徑上所有 commit)|
 |`git clean -n [-d] [-i] [<file-or-path>...]`|show the untracked file(s) [and directories] which will be removed from the working tree [interactively]|
 |`git clean -n -x | -X [<file-or-path>...]`|show the untracked and ignored/only the ignored file(s) which will be removed from the working tree|
 |`git clean -f [...]`|execute `git clean` actually|
 |`git merge [-m <msg>] <commit>`|merge the specific branch into current one (w/ commit message(in case one is created))|
-|`git rm [--cached] [file1] [file2] ...`|remove tracked file(s) [and keep them in workspace]|
+|`git rm [--cached] [<file>...]`|remove tracked file(s) [and keep them in workspace]|
 |`git ls-files`|show information about files in the index and the working tree|
 |git push|...|
 |git pull|= fetch + merge ...|
 |git fetch|...|
 |git stash|...|
-|`git diff [--cached] [<file>]`|show the [specific] file differences [with the staged one]|
+|`git diff [--cached] [<file>...]`|show the file differences [with the staged one]|
 |`git diff -- <file-A> <file-B>`|show the differences between the files|
 |`git diff <branch-A> <branch-B> -- <file>`|show the file differences with the one in another branch|
 |`git diff <branch-A>:<file-A> <branch-B>:<file-B>`|show the file differences with another file in another branch|
