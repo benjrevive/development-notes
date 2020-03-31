@@ -46,7 +46,7 @@ Git best practices
 |`git diff <branch-A> <branch-B> -- <file>`|show the file differences with the one in another branch|
 |`git diff <branch-A>:<file-A> <branch-B>:<file-B>`|show the file differences with another file in another branch|
 |`git diff --name-status [<branch-A>] <branch-B>`|show only names and status of changed files between the branches|
-|`git difftool ...`|`git diff` using external tool|
+|`git difftool ... [-y] [&]`|`git diff` using external tool [without prompting] [in the background]|
 |`git branch <branch>`|create a new branch|
 |`git branch -m [<old-branch>] <new-branch>`|rename the branch|
 |`git branch -d <branch>`|delete the branch|
