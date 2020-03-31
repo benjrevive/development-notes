@@ -27,7 +27,7 @@ Git best practices
 |`git reset [<file>...]`|unstage the file(s)|
 |<code>git reset \<commit> [--soft&#124;--mixed&#124;--hard]</code>|reset to the specific commit, cancel the commits in the path and restore the files into index/workspace/recycle bin (`--mixed` is the default mode if not specified)|
 |`git clean -n [-d] [-i] [<file-or-path>...]`|show the untracked file(s) [and directories] which will be removed from the working tree [interactively]|
-|`git clean -n -x | -X [<file-or-path>...]`|show the untracked and ignored/only the ignored file(s) which will be removed from the working tree|
+|<code>git clean -n -x &#124; -X [<file-or-path>...]</code>|show the untracked and ignored/only the ignored file(s) which will be removed from the working tree|
 |`git clean -f [...]`|execute `git clean` actually|
 |`git merge [-m <msg>] <commit>`|merge the specific branch into current one (w/ commit message(in case one is created))|
 |`git rm [--cached] [<file>...]`|remove tracked file(s) [and keep them in workspace]|
