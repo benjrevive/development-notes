@@ -4,11 +4,16 @@ linux-related notes
 ## bash 相關
 
 ### 啟用終端機顯示顏色
-將 `~/.bashrc` 檔案中 `#force_color_prompt=yes` 註解符號 `#` 刪除，執行：
-```bash
-source ~/.bashrc
+
+#### Ubuntu
+將 `~/.bashrc` 檔案中 `#force_color_prompt=yes` 註解符號 `#` 刪除，執行 `source ~/.bashrc` 或重新登入終端機
+
+#### CentOS
+在 `~/.bashrc` 檔案尾端加入：
 ```
-或重新登入終端機
+PS1='\[\e[01;36m\]\u\[\e[01;37m\]@\[\e[01;33m\]\H\[\e[01;37m\]:\[\e[01;32m\]\w\[\e[01;37m\]\$\[\033[0;37m\] '
+```
+執行 `source ~/.bashrc` 或重新登入終端機
 
 ### 清空畫面
 ```bash
