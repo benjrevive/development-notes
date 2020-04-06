@@ -30,6 +30,22 @@ clear
 ### 將輸入區內容註解
 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>#</kbd>
 
+## 系統資訊
+
+### 顯示作業系統版本
+
+#### Ubuntu
+
+```
+lsb_release -a
+```
+
+#### CentOS 8
+
+```
+cat /etc/system-release
+```
+
 ## 網路相關
 
 ### 列出所有網卡硬體資訊  
