@@ -51,6 +51,13 @@ cat /etc/system-release
 cat /etc/os-release
 ```
 
+### 設定主機名稱
+
+#### CentOS 8
+```
+# hostnamectl set-hostname <hostname>
+```
+
 ## 網路相關
 
 ### 列出所有網卡硬體資訊  
