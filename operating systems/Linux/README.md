@@ -46,6 +46,11 @@ lsb_release -a
 cat /etc/system-release
 ```
 
+#### General
+```
+cat /etc/os-release
+```
+
 ## 網路相關
 
 ### 列出所有網卡硬體資訊  
