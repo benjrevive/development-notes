@@ -15,6 +15,14 @@ PS1='\[\e[01;36m\]\u\[\e[01;37m\]@\[\e[01;33m\]\H\[\e[01;37m\]:\[\e[01;32m\]\w\[
 ```
 執行 `source ~/.bashrc` 或重新登入終端機
 
+##### 顯示 Git 狀態的版本
+從 Git 官方專案取得 `contrib/completion/git-prompt.sh` 置於家目錄，並在 `~/.bashrc` 檔案尾端加入以下片段後執行 `source ~/.bashrc` 或重新登入終端機：
+```bash
+. ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+PS1='\[\e[01;36m\]\u\[\e[01;37m\]@\[\e[01;33m\]\H\[\e[01;37m\]:\[\e[01;32m\]\w\[\e[01;37m\]\[\e[35m\]$(__git_ps1 " (%s)")\[\e[m\]\$\[\033[0;37m\] '
+```
+
 ### 清空畫面
 ```bash
 clear
