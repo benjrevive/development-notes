@@ -38,6 +38,9 @@ clear
 ### 將輸入區內容註解
 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>#</kbd>
 
+### 查看最近1000筆以前的指令記錄
+使用 `less`、`view` 之類指令查看 `~/.bash_history`
+
 ## 系統資訊
 
 ### 顯示作業系統版本
