@@ -10,7 +10,7 @@ linux-related notes
 
 #### CentOS
 在 `~/.bashrc` 檔案尾端加入：
-```
+```bash
 PS1='\[\e[01;36m\]\u\[\e[01;37m\]@\[\e[01;33m\]\H\[\e[01;37m\]:\[\e[01;32m\]\w\[\e[01;37m\]\$\[\033[0;37m\] '
 ```
 執行 `source ~/.bashrc` 或重新登入終端機
@@ -24,10 +24,7 @@ PS1='\[\e[01;36m\]\u\[\e[01;37m\]@\[\e[01;33m\]\H\[\e[01;37m\]:\[\e[01;32m\]\w\[
 ```
 
 ### 清空畫面
-```bash
-clear
-```
-或 <kbd>Ctrl</kbd>+<kbd>L</kbd>
+執行指令 `clear` 或 <kbd>Ctrl</kbd>+<kbd>L</kbd>
 
 ### 清空輸入區
 <kbd>Ctrl</kbd>+<kbd>U</kbd> (復原: <kbd>Ctrl</kbd>+<kbd>Y</kbd>)
@@ -87,7 +84,7 @@ ifconfig -s -a
 ```
 
 ### 在 Ubuntu 中停用 IPv6 功能
-編輯 /etc/sysctl.conf，在檔案最後加上以下內容後，
+編輯 `/etc/sysctl.conf`，在檔案最後加上以下內容後，
 ```
 net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
