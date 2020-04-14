@@ -35,6 +35,26 @@ PS1='\[\e[01;36m\]\u\[\e[01;37m\]@\[\e[01;33m\]\H\[\e[01;37m\]:\[\e[01;32m\]\w\[
 ### 將輸入區內容註解
 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>#</kbd>
 
+### 再次執行先前指令
+執行 `history` 查看指令記錄與其編號，執行 `!<number>` 以再次執行該指令。  
+範例：
+```
+$ ls
+a.txt  b.txt
+
+$ cat a.txt
+hello world
+
+$ history
+...
+  103  ls
+  104  cat a.txt
+  105  history
+
+$ !103
+a.txt  b.txt
+```
+
 ### 查看最近1000筆以前的指令記錄
 使用 `less`、`view` 之類指令查看 `~/.bash_history`
 
