@@ -17,4 +17,32 @@ dnf install -y \
   https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.13-3.1.el7.x86_64.rpm \
   docker-ce \
   docker-ce-cli
+
+## Create /etc/docker directory.
+mkdir /etc/docker
+
+# Setup daemon.
+# This configuration is recommended by k8s
+cat > /etc/docker/daemon.json <<EOF
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2",
+  "storage-opts": [
+    "overlay2.override_kernel_check=true"
+  ]
+}
+EOF
+
+mkdir -p /etc/systemd/system/docker.service.d
+
+# Restart Docker
+systemctl daemon-reload
+systemctl restart docker
 ```
+
+Says the [Kubernetes official site](https://kubernetes.io/docs/setup/production-environment/container-runtimes/):
+> Changing the settings such that your container runtime and kubelet use `systemd` as the cgroup driver stabilized the system.
