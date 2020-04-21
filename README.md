@@ -16,6 +16,8 @@ linux-related notes
 - [系統資訊](#系統資訊)
   - [顯示作業系統版本](#顯示作業系統版本)
   - [設定主機名稱](#設定主機名稱)
+- [權限相關](#權限相關)
+  - [使用 sudo 權限免輸入密碼](#使用-sudo-權限免輸入密碼)
 - [網路相關](#網路相關)
   - [列出所有網卡硬體資訊](#列出所有網卡硬體資訊)
   - [列出所有網卡名稱](#列出所有網卡名稱)
@@ -144,6 +146,23 @@ cat /etc/os-release
 ```
 # hostnamectl set-hostname <hostname>
 ```
+
+## 權限相關
+
+### 使用 sudo 權限免輸入密碼
+執行 `sudo visudo`
+
+以 CentOS 8 為例，註解(停用)下列設定
+```
+%wheel  ALL=(ALL)  ALL
+```
+並啟用
+```
+%wheel  ALL=(ALL)  NOPASSWD: ALL
+```
+重新登入或執行 `exec $SHELL -l` 重新載入 shell 使設定生效
+
+> Ref: [Understanding the sudoers File - Viraj Khatavkar](https://medium.com/@viraj.khatavkar/understanding-the-sudoers-file-8d71961b28ac)
 
 ## 網路相關
 
