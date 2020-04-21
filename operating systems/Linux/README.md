@@ -18,6 +18,8 @@ linux-related notes
   - [設定主機名稱](#設定主機名稱)
 - [權限相關](#權限相關)
   - [使用 sudo 權限免輸入密碼](#使用-sudo-權限免輸入密碼)
+- [SSH 相關](#ssh-相關)
+  - [將 SSH 授權用公鑰加至伺服器](#將-ssh-授權用公鑰加至伺服器)
 - [網路相關](#網路相關)
   - [列出所有網卡硬體資訊](#列出所有網卡硬體資訊)
   - [列出所有網卡名稱](#列出所有網卡名稱)
@@ -163,6 +165,33 @@ cat /etc/os-release
 重新登入或執行 `exec $SHELL -l` 重新載入 shell 使設定生效
 
 > Ref: [Understanding the sudoers File - Viraj Khatavkar](https://medium.com/@viraj.khatavkar/understanding-the-sudoers-file-8d71961b28ac)
+
+## SSH 相關
+
+### 將 SSH 授權用公鑰加至伺服器
+建立 SSH 設定目錄並設定權限
+```bash
+mkdir -p ~/.ssh && chmod 700 ~/.ssh
+```
+將 SSH 公鑰內容附加至 `~/.ssh/authorized_keys` 內容末段
+
+設定權限
+```bash
+chmod 600 ~/.ssh/authorized_keys
+```
+相關權限設定：
+```bash
+chmod 700 ~/.ssh
+chmod 644 ~/.ssh/authorized_keys
+chmod 644 ~/.ssh/known_hosts
+chmod 644 ~/.ssh/config
+chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/github_rsa
+chmod 644 ~/.ssh/github_rsa.pub
+chmod 600 ~/.ssh/mozilla_rsa
+chmod 644 ~/.ssh/mozilla_rsa.pub
+```
 
 ## 網路相關
 
