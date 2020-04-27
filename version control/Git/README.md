@@ -23,6 +23,7 @@ Git best practices
 |`git add [-i] <file>...`|stage the file(s) [interactively]|
 |`git add -e <file>...`|stage the file(s) by using editor|
 |`git add -p [<file>...]`|partial staging|
+|`git add -n <file>...`|don't actually add the file(s), just show the ones which will be added|
 |`git commit [-m <message>]`|commit the added files [with the message]|
 |`git commit -am <message>`|add all tracked files and commit with message|
 |`git reset [<file>...]`|unstage the file(s)|
