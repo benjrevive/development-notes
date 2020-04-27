@@ -54,6 +54,7 @@ Git best practices
 |`git push <remote> --delete <branch>`|delete the remote branch|
 |`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
 |`git rebase -i <commit>`|rebase the commits after the specified one|
+|`git cherry-pick [-e] <commit>...`|apply the change(s) to current commit [with editing the commit message(s)]|
 |`git remote -v`|show the remote names and urls|
 |`git remote set-url <remote-name> <new-url>`|set the remote url|
 |<code>git config [--local&#124;--global&#124;--system] user.name&#124;user.email <email></code>|set [local/global/system] user name/email|
