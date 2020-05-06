@@ -16,6 +16,7 @@ linux-related notes
 - [系統資訊](#系統資訊)
   - [顯示作業系統版本](#顯示作業系統版本)
   - [設定主機名稱](#設定主機名稱)
+  - [設定 GRUB 2 開機選單等待時間](#設定-grub-2-開機選單等待時間)
 - [權限相關](#權限相關)
   - [使用 sudo 權限免輸入密碼](#使用-sudo-權限免輸入密碼)
 - [SSH 相關](#ssh-相關)
@@ -148,6 +149,14 @@ cat /etc/os-release
 ```
 # hostnamectl set-hostname <hostname>
 ```
+
+### 設定 GRUB 2 開機選單等待時間
+
+執行 `sudo vim /etc/default/grub` 修改下列等待秒數
+```
+GRUB_TIMEOUT=5
+```
+存檔後執行 `sudo grub2-mkconfig -o /boot/grub2/grub.cfg` 使修改結果生效
 
 ## 權限相關
 
