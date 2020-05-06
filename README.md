@@ -26,6 +26,8 @@ linux-related notes
   - [列出所有網卡名稱](#列出所有網卡名稱)
   - [顯示所有網卡流量](#顯示所有網卡流量)
   - [在 Ubuntu 中停用 IPv6 功能](#在-ubuntu-中停用-ipv6-功能)
+- [Vim](#vim)
+  - [vim 存檔時權限不足之解決方法](#vim-存檔時權限不足之解決方法)
 - [畫面相關](#畫面相關)
   - [新增 Ubuntu 螢幕解析度設定中未出現的項目](#新增-ubuntu-螢幕解析度設定中未出現的項目)
 - [在 Ubuntu 中 VMware 共用資料夾掛載路徑](#在-ubuntu-中-vmware-共用資料夾掛載路徑)
@@ -230,6 +232,12 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 ```bash
 sudo sysctl -p
 ```
+
+## Vim
+
+### vim 存檔時權限不足之解決方法
+在 Vim 畫面輸入指令 `:w !sudo tee %` 以使用 sudo 權限存檔
+> Ref: [Vim 使用 tee 和 sudo 解決臨時權限不足的問題 | Tsung's Blog](https://blog.longwin.com.tw/2018/11/vim-tee-sudo-permission-file-write-2018/)
 
 ## 畫面相關
 
