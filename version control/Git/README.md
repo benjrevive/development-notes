@@ -56,6 +56,7 @@ Git best practices
 |`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
 |`git rebase -i <commit>`|rebase the commits after the specified one|
 |`git cherry-pick [-e] <commit>...`|apply the change(s) to current commit [with editing the commit message(s)]|
+|`git revert [--no-edit] <commit>...`|revert the commit(s) [without editing the commit message]|
 |`git reflog`|show the operating logs|
 |`git remote -v`|show the remote names and urls|
 |`git remote set-url <remote-name> <new-url>`|set the remote url|
