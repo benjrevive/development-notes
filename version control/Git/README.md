@@ -32,6 +32,7 @@ Git best practices
 |<code>git clean -n -x &#124; -X [<file-or-path>...]</code>|show the untracked and ignored/only the ignored file(s) which will be removed from the working tree|
 |`git clean -f [...]`|execute `git clean` actually|
 |`git merge [-m <msg>] <commit>`|merge the specific branch into current one (w/ commit message(in case one is created))|
+|`git mv [-f] [-n] <file-or-directory> <destination>`|move or rename the file or directory [even if the destination exists] [w/o actual execution but just showing the expected result]|
 |`git rm [--cached] [<file>...]`|remove tracked file(s) [and keep them in workspace]|
 |`git ls-files`|show information about files in the index and the working tree|
 |git push|...|
