@@ -35,7 +35,8 @@ Git best practices
 |`git mv [-f] [-n] <file-or-directory> <destination>`|move or rename the file or directory [even if the destination exists] [w/o actual execution but just showing the expected result]|
 |`git rm [--cached] [<file>...]`|remove tracked file(s) [and keep them in workspace]|
 |`git ls-files`|show information about files in the index and the working tree|
-|git push|...|
+|`git push -u|--set-upstream <remote>`|set the remote repo of the current branch and push it|
+|`git push <remote> --delete <branch>`|delete the remote branch|
 |git pull|= fetch + merge ...|
 |git fetch|...|
 |`git stash`|stash all changed files except the untracked ones|
@@ -53,7 +54,6 @@ Git best practices
 |`git branch <branch>`|create a new branch|
 |`git branch -m [<old-branch>] <new-branch>`|rename the branch|
 |`git branch -d <branch>`|delete the branch|
-|`git push <remote> --delete <branch>`|delete the remote branch|
 |`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
 |`git rebase -i <commit>`|rebase the commits after the specified one|
 |`git cherry-pick [-e] <commit>...`|apply the change(s) to current commit [with editing the commit message(s)]|
