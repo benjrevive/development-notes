@@ -13,6 +13,9 @@ linux-related notes
   - [使 history 指令的輸出結果包含時間戳](#使-history-指令的輸出結果包含時間戳)
 - [檔案/資料夾](#檔案資料夾)
   - [搜尋檔案](#搜尋檔案)
+  - [壓縮](#壓縮)
+  - [解壓縮](#解壓縮)
+  - [顯示壓縮檔內容](#顯示壓縮檔內容)
 - [套件相關](#套件相關)
   - [列出所有已安裝套件](#列出所有已安裝套件)
 - [系統資訊](#系統資訊)
@@ -42,9 +45,6 @@ linux-related notes
 - [刪除使用者帳戶:](#刪除使用者帳戶)
 - [以名稱搜尋資料夾:](#以名稱搜尋資料夾)
 - [以名稱搜尋資料夾(不分大小寫):](#以名稱搜尋資料夾不分大小寫)
-- [顯示壓縮檔內容:](#顯示壓縮檔內容)
-- [壓縮:](#壓縮)
-- [解壓縮:](#解壓縮)
 - [顯示已安裝套件:](#顯示已安裝套件)
 - [在背景執行指令(使用者中斷連線後仍繼續執行):](#在背景執行指令使用者中斷連線後仍繼續執行)
 - [Vim 唯讀模式](#vim-唯讀模式)
@@ -126,6 +126,40 @@ HISTTIMEFORMAT='%F %T '
 
 ```bash
 find <path> -name "<filename-or-pattern>"
+```
+
+### 壓縮
+
+#### gzip 格式:
+
+```bash
+tar -zcvpf <output-filename> <source>
+```
+
+#### xz 格式 (效能與壓縮比較佳):
+
+```bash
+tar -Jcvpf <output-filename> <source>
+```
+
+### 解壓縮
+
+#### gzip 格式:
+
+```bash
+tar [-C <output-path>] -zxvf <file>
+```
+
+#### xz 格式:
+
+```bash
+tar [-C <output-path>] -Jxvf <file>
+```
+
+### 顯示壓縮檔內容
+
+```bash
+tar -tvf <file>
 ```
 
 ## 套件相關
@@ -328,21 +362,6 @@ find <path> -name <dirname> -type d
 ## 以名稱搜尋資料夾(不分大小寫): 
 ```bash
 find <path> -iname <dirname> -type d
-```
-
-## 顯示壓縮檔內容: 
-```bash
-tar -tvf <file>
-```
-
-## 壓縮: 
-```bash
-tar -zcvpf <output-filename> <source>
-```
-
-## 解壓縮: 
-```bash
-tar [-C <output-path>] -zxvf <file>
 ```
 
 ## 顯示已安裝套件: 
