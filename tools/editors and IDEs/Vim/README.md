@@ -1,3 +1,4 @@
 # Vim
 
-* diw: delete a word
+* diw: Delete a word
+* u: Undo
