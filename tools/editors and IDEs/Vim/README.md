@@ -3,6 +3,7 @@
 * diw: Delete a word
 * u: Undo
 * Ctrl + R: Redo
+* yyp: Copy the current line and paste after it
 
 Caret moving:
 * 0: Move to the beginning of the line
