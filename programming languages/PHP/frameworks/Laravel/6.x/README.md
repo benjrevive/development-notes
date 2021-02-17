@@ -2,7 +2,6 @@
 
 - [Directory Structure](#directory-structure)
   - [The `app` Directory](#the-app-directory)
-    - [The `models` Directory](#the-models-directory)
   - [The `bootstrap` Directory](#the-bootstrap-directory)
   - [The `config` Directory](#the-config-directory)
   - [The `database` Directory](#the-database-directory)
@@ -17,11 +16,7 @@
 
 ### The `app` Directory
 
-程式中大部分 class 都會在這裡
-
-#### The `models` Directory
-
-定義 Eloquent ORM 的 model
+程式中大部分 class 都會在這裡。使用 `php artisan make:model` 指令產生的 Eloquent ORM model 預設路徑也在此。可在指令的 class 名稱前加上 `Models/` 以指定路徑至 `app/Models/`
 
 ### The `bootstrap` Directory
 
