@@ -36,6 +36,7 @@ Git best practices
 |`git mv [-f] [-n] <file-or-directory> <destination>`|move or rename the file or directory [even if the destination exists] [w/o actual execution but just showing the expected result]|
 |`git rm [--cached] [<file>...]`|remove tracked file(s) [and keep them in workspace]|
 |`git ls-files`|show information about files in the index and the working tree|
+|`git ls-tree -r --name-only <commit>`|list all files in the commit tree|
 |`git push -u|--set-upstream <remote>`|set the remote repo of the current branch and push it|
 |`git push <remote> --delete <branch>`|delete the remote branch|
 |git pull|= fetch + merge ...|
