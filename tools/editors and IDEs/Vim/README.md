@@ -9,6 +9,7 @@
 * A: Insert after the end of current line 
 * \<n>o\<Esc>: Insert n blank lines after current line
 * \<n>O\<Esc>: Insert n blank lines before current line
+* viw: Select the word 
 
 Caret moving:
 * 0: Move to the beginning of the line
