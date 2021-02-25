@@ -11,6 +11,7 @@
 * \<n>O\<Esc>: Insert n blank lines before current line
 * viw: Select the word 
 * cw: Replace the word
+* ?: Search backwards
 
 Caret moving:
 * 0: Move to the beginning of the line
