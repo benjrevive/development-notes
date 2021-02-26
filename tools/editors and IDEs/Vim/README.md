@@ -12,6 +12,7 @@
 * viw: Select the word 
 * cw: Replace the word
 * ?: Search backwards
+* zz: Move current line to the middle of the screen
 
 Caret moving:
 * 0: Move to the beginning of the line
