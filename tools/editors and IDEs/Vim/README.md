@@ -2,6 +2,7 @@
 
 * diw: Delete a word
 * d$: Delete from caret to end of the line
+* 0D: Delete all characters in current line
 * u: Undo
 * Ctrl + R: Redo
 * yyp: Copy the current line and paste after it
