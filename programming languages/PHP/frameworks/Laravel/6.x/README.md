@@ -11,6 +11,7 @@
   - [The `storage` Directory](#the-storage-directory)
   - [The `tests` Directory](#the-tests-directory)
   - [The `vendor` Directory](#the-vendor-directory)
+- [Notes](#notes)
 
 ## Directory Structure
 
@@ -63,3 +64,7 @@
 ### The `vendor` Directory
 
 包含 Composer 的依賴檔案
+
+## Notes
+
+* 在測試中使用 `dump()` 有機會產生非預期的錯誤
