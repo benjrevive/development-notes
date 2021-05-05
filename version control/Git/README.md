@@ -37,7 +37,7 @@ Git best practices
 |`git rm [--cached] [<file>...]`|remove tracked file(s) [and keep them in workspace]|
 |`git ls-files`|show information about files in the index and the working tree|
 |`git ls-tree -r --name-only <commit>`|list all files in the commit tree|
-|`git push -u|--set-upstream <remote>`|set the remote repo of the current branch and push it|
+|<code>git push -u&#124;--set-upstream \<remote></code>|set the remote repo of the current branch and push it|
 |`git push <remote> --delete <branch>`|delete the remote branch|
 |git pull|= fetch + merge ...|
 |git fetch|...|
