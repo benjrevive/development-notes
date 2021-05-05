@@ -64,7 +64,7 @@ Git best practices
 |`git reflog`|show the operating logs|
 |`git remote -v`|show the remote names and urls|
 |`git remote set-url <remote-name> <new-url>`|set the remote url|
-|<code>git config [--local&#124;--global&#124;--system] user.name&#124;user.email <email></code>|set [local/global/system] user name/email|
+|<code>git config [--local&#124;--global&#124;--system] user.name&#124;user.email \<value></code>|set [local/global/system] user name/email|
 
 ## Patch mode options
 |option|description|
