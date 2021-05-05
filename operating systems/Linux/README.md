@@ -13,6 +13,7 @@ linux-related notes
   - [使 history 指令的輸出結果包含時間戳](#使-history-指令的輸出結果包含時間戳)
 - [檔案/資料夾](#檔案資料夾)
   - [搜尋檔案](#搜尋檔案)
+  - [統計檔案數量](#統計檔案數量)
   - [壓縮](#壓縮)
   - [解壓縮](#解壓縮)
   - [顯示壓縮檔內容](#顯示壓縮檔內容)
@@ -137,6 +138,12 @@ HISTTIMEFORMAT='%F %T '
 
 ```bash
 find <path> -name "<filename-or-pattern>"
+```
+
+### 統計檔案數量
+
+```bash
+ls [<arguments>] | wc -l
 ```
 
 ### 壓縮
