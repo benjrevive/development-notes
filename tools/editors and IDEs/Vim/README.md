@@ -21,3 +21,4 @@ Caret moving:
 * ^: Move to the first non-blank char of the line
 * g_: Move to the last non-blank char of the line
 * ge: Move to the end of the previous word
+* b: Move backward to the beginning of a word
