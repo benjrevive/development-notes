@@ -22,3 +22,6 @@ Caret moving:
 * g_: Move to the last non-blank char of the line
 * ge: Move to the end of the previous word
 * b: Move backward to the beginning of a word
+
+Surrounding (plugin):
+* ds\<symbol>: remove the surrounding symbol
