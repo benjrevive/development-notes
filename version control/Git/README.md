@@ -57,6 +57,7 @@ Git best practices
 |`git branch -m [<old-branch>] <new-branch>`|rename the branch|
 |`git branch -d <branch>`|delete the branch|
 |`git branch --unset-upstream [<local-branch>]`|stop current[/specific] branch tracking the remote one|
+|`git describe --tags --abbrev=0`|show the most recent tag|
 |`git log [-<number>] [--branches] [--oneline]`|show [number] commit logs [in all branches] [in the form of one line per log]|
 |`git rebase -i <commit>`|rebase the commits after the specified one|
 |`git cherry-pick [-e] <commit>...`|apply the change(s) to current commit [with editing the commit message(s)]|
