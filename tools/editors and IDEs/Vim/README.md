@@ -24,4 +24,5 @@ Caret moving:
 * b: Move backward to the beginning of a word
 
 Surrounding (plugin):
+* S\<symbol>: surround the selected text with the symbol
 * ds\<symbol>: remove the surrounding symbol
