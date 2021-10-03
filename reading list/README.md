@@ -14,3 +14,5 @@
 1. Domain-Driven Design: Tackling Complexity in the Heart of Software - Eric Evans
 1. Patterns of Enterprise Application Architecture - Martin Fowler
 1. Test-Driven Development - Kent Beck
+1. The Art of Unit Testing - Roy Osherove
+1. Refactoring to Patterns - Joshua Kerievsky
