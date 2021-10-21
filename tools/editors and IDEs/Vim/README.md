@@ -22,6 +22,7 @@ Caret moving:
 * g_: Move to the last non-blank char of the line
 * ge: Move to the end of the previous word
 * b: Move backward to the beginning of a word
+* %: Move to the matching bracket
 
 Surrounding (plugin):
 * S\<symbol>: surround the selected text with the symbol
