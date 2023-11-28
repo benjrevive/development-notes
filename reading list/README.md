@@ -16,3 +16,4 @@
 1. Test-Driven Development - Kent Beck
 1. The Art of Unit Testing - Roy Osherove
 1. Refactoring to Patterns - Joshua Kerievsky
+1. The Clean Coder: A Code of Conduct for Professional Programmers - Robert C. Martin
